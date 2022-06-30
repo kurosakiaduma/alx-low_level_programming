@@ -5,9 +5,9 @@
  * out to the screen
  */
 int main(void){
-	char f_name; 
+	char f_name[50]; 
 	puts("Enter your name below:");
-	scanf("%d", &f_name);
+	scanf("%s", f_name);
 	printf("\n %s", f_name);
 	return (0);
 }
