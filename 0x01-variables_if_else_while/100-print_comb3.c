@@ -7,6 +7,7 @@
  * The two digits must be different.
  * Print only the smallest combination of numbers.
  * Not allowed to use char or printf, puts etc..
+ * Return: 0
  */
 int main(void)
 {
@@ -14,13 +15,18 @@ int main(void)
 
 	i = 0;
 
-	while(i < 100)
+	while (i < 100)
 	{
-		j = i % 10; 
-		/* Save the remainder to print single 
-		 * digits as two digits*/
-		k =  i / 10; /* This will be used to print
-				double digits in tens*/
+		j = i % 10;
+		/**
+		 * Save the remainder to print single
+		 * digits as two digits
+		 */
+		k =  i / 10;
+		/**
+		 * This will be used to print
+		 * double digits in tens
+		 */
 		if (k < j)
 		{
 			putchar(k + '0');
