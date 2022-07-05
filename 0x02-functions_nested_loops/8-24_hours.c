@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * Jack_Bauer - Print every minute of the day of Agent Jack Bauer
- * Description: Start from 00:00 to 23:59
+ * jack_bauer - Print every minute of the day of Agent Jack Bauer
+ * Description: Start from 00:00 to 23:59 and 
  */
 void jack_bauer(void)
 {
