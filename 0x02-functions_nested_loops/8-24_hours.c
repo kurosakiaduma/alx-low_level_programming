@@ -17,15 +17,15 @@ void jack_bauer(void)
 		_putchar(m2 + '0');
 		_putchar('\n');
 
-		d++;
-		if (m4 > 9)
+		m2++;
+		if (m2 > 9)
 		{
-			m4 = 0;
-			m3++;
+			m2 = 0;
+			m1++;
 		}
-		if (m3 > 5)
+		if (m1 > 5)
 		{
-			m3 = 0;
+			m1 = 0;
 			h2++;
 		}
 		if (h2 > 9)
