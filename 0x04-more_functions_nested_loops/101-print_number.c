@@ -2,46 +2,34 @@
 
 /**
  * print_number - Function that prints an integer.
- * @n: int type number
+ * @i: int type number
  * Description: Can only use _putchar to print.
  */
 void print_number(int n)
 {
-	long m; /* A power of 10 */
-	int c; /* Variable used to check the value of nums */
-	long num; /* Converts int to long */
-
-	num = n;
-	/* negatives */
-	if (num < 0)
+	if (n/10 != 0)
 	{
-		num *= -1;
+		print_number(n/10);
+		if ( n > 0 )
+		{
+			_putchar(n%10 + '0');
+		}
+		else
+		{
+			_putchar(-n%10 + '0');
+		}
+	}
+	else if((n/10==0) && (n%10!=0) && (n>0))
+	{
+		_putchar(n%10 + '0');
+	}
+	else if((n/10==0) && (n%10!=0) && (n<=0))
+	{
 		_putchar('-');
+		_putchar(-n%10+'0');
 	}
-
-	/* count up */
-	m = 1;
-	c = 1;
-	while (c)
+	else if (n == 0)
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-		else
-			c = 0;
-	}
-
-	/* count down */
-	while (num >= 0)
-	{
-		if (m == 1)
-		{
-			_putchar(num % 10 + '0');
-			num = -1;
-		}
-		else
-		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
-		}
+		_putchar('0');
 	}
 }
