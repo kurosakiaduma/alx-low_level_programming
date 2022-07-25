@@ -26,3 +26,23 @@ mandatory
 1. Write a program that prints all arguments it receives
 1. All arguments should be printed, including the first one
 1. Only print one argument per line, ending with a new line
+### Neither irony nor sarcasm is argument
+1. Write a program that multiplies two numbers.
+1. Your program should print the result of the multiplication, followed by a new line
+1. You can assume that the two numbers and result of the multiplication can be stored in an integer
+1. If the program does not receive two arguments, your program should print Error, followed by a new line, and return 1
+### To infinity and beyond
+1. Write a program that adds positive numbers.
+1. Print the result, followed by a new line
+1. If no number is passed to the program, print 0, followed by a new line
+1. If one of the number contains symbols that are not digits, print Error, followed by a naew line, and return 1
+1. You can assume that numbers and the addition of all the numbers van be stored in an int
+### Minimal Number of Coins for Change
+1. Write a program that prints the minimum number of coins to make change for an amount of money.
+
+1. Usage: ./change cents
+1. where cents is the amount of cents you need to give back
+1. if the number of arguments passed to your program is not exactly 1, print Error, followed by a new line, and return 1
+1. you should use atoi to parse the parameter passed to your program
+1. If the number passed as the argument is negative, print 0, followed by a new line
+1. You can use an unlimited number of coins of values 25, 10, 5, 2, and 1 cent
