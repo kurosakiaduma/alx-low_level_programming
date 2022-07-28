@@ -1,0 +1,7 @@
+# 0x0B. C - more malloc, free
+### Learning Objectives
+> At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+
+### General
+> 1. How to use the exit function
+> 1. What are the functions calloc and realloc from the standard library and how to use them
